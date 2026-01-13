@@ -1,6 +1,6 @@
 /******************************************************************************
 
- Desenvolva um algoritmo que
+Desenvolva um algoritmo que
 calcule o consumo de combustível de um
 automóvel em determinada viagem. Para isso,
 devem ser obtidos: 
