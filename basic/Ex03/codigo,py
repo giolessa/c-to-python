@@ -1,0 +1,37 @@
+"""As vendas parceladas se
+tornaram uma ótima opção para os lojistas que,
+a cada dia, criam novas promoções para tentar
+conquistar novos clientes. Faça um algoritmo
+que permita ao lojista informar o preço do
+produto e receber as seguintes informações:
+a) O valor com 10% de desconto para
+pagamento à vista;
+b) O valor da prestação para parcelamento
+sem juros, em 5x;
+c) O valor da prestação para parcelamento
+com juros, em 10x, com 20% de acréscimo
+no valor do produto."""
+
+def vendas_parceladas(valorProduto):
+
+    valor_desconto = valorProduto * 0.9
+
+    valor_5x = valorProduto/5
+
+    valor_10x = ((valorProduto * 0.2) + valorProduto)/10
+
+    return valor_desconto, valor_5x, valor_10x
+
+def main():
+
+    precoProduto = float(input("Informe o preço do produto: "))
+    
+    valor_desconto, valor_5x, valor_10x = vendas_parceladas(precoProduto)
+
+    print(f"O valor do produto com o pagamento à vista é: {valor_desconto}")
+    print(f"O valor do produto parcelado 5x sem juros {valor_5x:.2f}")
+    print(f"O valor do produto parcelado 10x com juros {valor_10x:.2f}")
+
+
+if __name__ == "__main__":
+    main()
